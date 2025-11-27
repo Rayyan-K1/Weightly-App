@@ -9,8 +9,8 @@
 
 ## Live App
 
-- [iOS App Store] (https://apps.apple.com/us/app/weightly-mounjaro-tracker/id6743134664)
-- [Google Play] (https://play.google.com/store/apps/details?id=com.bilaal5279.weightly&hl=en)
+- [iOS App Store](https://apps.apple.com/us/app/weightly-mounjaro-tracker/id6743134664)
+- [Google Play](https://play.google.com/store/apps/details?id=com.bilaal5279.weightly&hl=en)
 ---
 
 ## Feature Overview
