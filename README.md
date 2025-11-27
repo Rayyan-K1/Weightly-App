@@ -143,6 +143,18 @@ Weightly follows a classic **React + Node/Express + MySQL** architecture, design
 - Implemented audit logging, analytics endpoints, and Node clustering.
 - Deployed and maintained the production environment.
 
+---
+
+## Screenshots
+
+![Weightly screenshot 1](./Weightly1.jpeg)
+![Weightly screenshot 2](./Weightly2.jpeg)
+![Weightly screenshot 3](./Weightly3.jpeg)
+![Weightly screenshot 4](./Weightly4.jpeg)
+![Weightly screenshot 5](./Weightly5.jpeg)
+![Weightly screenshot 6](./Weightly6.jpeg)
+
+
 ```mermaid
 graph TD
   U[User Browser / Mobile WebView] --> R[React frontend]
