@@ -112,11 +112,46 @@
 
 Weightly follows a classic **React + Node/Express + MySQL** architecture, designed for scalability and maintainability.
 
+Engineering Challenges & Solutions
+
+Reliable analytics for real users
+Needed accurate weekly/monthly trends from irregular user input.
+→ Implemented backend aggregation queries in MySQL and exposed pre-computed metrics to the frontend.
+
+Audit logging without hurting UX
+Logging every page change and data mutation can cause overhead.
+→ Implemented a lightweight logging layer that batches writes and keeps logging off the critical UI path.
+
+Scaling on a budget
+Wanted to handle spikes in traffic without complex infra.
+→ Used Node’s built-in clustering to spread API work across CPU cores while keeping deployment simple.
+
+Authentication & third-party sign-in
+Needed secure auth plus Apple/Google sign-in.
+→ Combined traditional bcrypt-backed accounts with OAuth-style flows for Apple and Google, unified under a single user model.
+
+
+Responsibilities:
+
+Designed the UX and visual layout for all major screens.
+
+Implemented the React frontend and navigation.
+
+Built the Node.js/Express backend and REST API.
+
+Designed and implemented the MySQL schema.
+
+Implemented authentication (Apple, Google, email/password) and bcrypt-based hashing.
+
+Implemented audit logging, analytics endpoints, and Node clustering.
+
+Deployed and maintained the production environment.
+
 ```mermaid
 graph TD
   U[User Browser / Mobile WebView] --> R[React Frontend]
-  R -->|HTTP JSON (POST/GET)| A[Node.js + Express API]
-  A -->|SQL Queries| DB[(MySQL Database)]
+  R --> A[Node.js + Express API]
+  A --> DB[(MySQL Database)]
   A --> L[Audit Logger]
 
   subgraph Backend
@@ -124,3 +159,7 @@ graph TD
     L
     C[Node Cluster (multiple workers)]
   end
+
+
+
+
