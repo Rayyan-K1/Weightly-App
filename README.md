@@ -112,6 +112,9 @@
 
 Weightly follows a classic **React + Node/Express + MySQL** architecture, designed for scalability and maintainability.
 
+---
+
+## Personal Challenges
 Engineering Challenges & Solutions
 
 Reliable analytics for real users
@@ -147,18 +150,12 @@ Implemented audit logging, analytics endpoints, and Node clustering.
 
 Deployed and maintained the production environment.
 
-```mermaid
+``````mermaid
 graph TD
-  U[User Browser / Mobile WebView] --> R[React Frontend]
+  U[User Browser / Mobile WebView] --> R[React frontend]
   R --> A[Node.js + Express API]
-  A --> DB[(MySQL Database)]
-  A --> L[Audit Logger]
-
-  subgraph Backend
-    A
-    L
-    C[Node Cluster (multiple workers)]
-  end
+  A --> DB[(MySQL database)]
+  A --> L[Audit logger]
 
 
 
